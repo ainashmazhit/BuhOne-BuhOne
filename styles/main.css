@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+.header {
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__logo {
+  gap: 30px;
+}
+
+.header__logo,
+.header__BuhOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__BuhOne {
+  gap: 185px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  list-style: none;
+  text-decoration: none;
+  gap: 49px;
+}
+
+.header__menu {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 68px;
+  text-transform: uppercase;
+  font-family: "Lato";
+  src: url("../Fonts/Lato-Bold.ttf");
+}
+
+.header__info,
+.header__menu {
+  flex-direction: row;
+}
+
+.header__info,
+.header__menu,
+.header__logo,
+.header__BuhOne {
+  display: flex;
+}
+@media (max-width: 576px) {
+  .header__info,
+  .header__menu,
+  .header__logo,
+  .header__BuhOne {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content1 {
+  font-family: "Lato";
+  src: url("../Fonts/Lato-Bold.ttf");
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 576px) {
+  .content1 {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.content2 {
+  font-family: "Lato";
+  src: url("../Fonts/Lato-Bold.ttf");
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  display: flex;
+}
+@media (max-width: 576px) {
+  .footer {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
