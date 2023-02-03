@@ -43,10 +43,9 @@ font-weight: 700;
 line-height: 66px;
 letter-spacing: 0em;
 @media (max-width: $mobile) {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 18px;
-    display: flex;
-    flex-direction: column;
+  
 }
 }
 h2 {
@@ -56,7 +55,11 @@ font-weight: 900;
 line-height: 69px;
 letter-spacing: 0em;
 text-align: left;
-
+@media (max-width: $mobile) {
+    font-weight: 200;
+    font-size: 18px;
+  
+}
 }
 .button {
     height: 55px;

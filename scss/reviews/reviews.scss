@@ -2,11 +2,14 @@
 
     width: 100%;
     padding: 140px;
-
+ @media (max-width: $mobile) {
+            padding: 20px 0;
+        }
 
     &__wrapper {
         display: flex;
 
+       
     }
 }
 
@@ -18,6 +21,11 @@
     align-items: flex-start;
     gap: 40px;
 
+    @media (max-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .reviews_name {
@@ -46,19 +54,20 @@
     width: 80px;
 }
 
-.surname {  
+.surname {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     font-weight: 900;
     width: 100%;
- }
+}
 
- .profession {
+.profession {
     display: flex;
- flex-direction: column;
+    flex-direction: column;
     font-size: 14px;
 }
+
 .review {
     display: flex;
     flex-wrap: wrap;
