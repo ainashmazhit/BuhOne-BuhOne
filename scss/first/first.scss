@@ -1,0 +1,45 @@
+.first {
+  background-image: url("../img/Rectanglefirst.svg");
+  background-size: cover;
+  width: 100%;
+  height: 670px;
+  padding: 170px 0 243px;
+
+  @media (max-width: $mobile) {
+    width: calc (100% -30px);
+    padding: 70px 0 43px;
+
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 80px;
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    }
+  }
+
+}
+
+.first__description {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+}

@@ -1,0 +1,66 @@
+.reviews {
+
+    width: 100%;
+    padding: 140px;
+
+
+    &__wrapper {
+        display: flex;
+
+    }
+}
+
+.content_reviews {
+    font-family: Merriweather;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+
+}
+
+.reviews_name {
+    font-size: 18px;
+}
+
+.wrapper_reviews_text {
+    background-color: $color-dark-gray;
+    display: flex;
+    width: 120%;
+
+
+}
+
+.reviews_text {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 95px 58px;
+    gap: 58px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
+
+.surname {  
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 900;
+    width: 100%;
+ }
+
+ .profession {
+    display: flex;
+ flex-direction: column;
+    font-size: 14px;
+}
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}

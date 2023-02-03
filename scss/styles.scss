@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+.wrapper {
+    display: flex;
+    width: calc (100% -60px);
+    margin: 0 auto;
+    max-width: $wrapper-width;
+    @media (max-width: $mobile) 
+    {
+        width: calc (100% -30px);  
+    }
+}
 html,
 body {
     height: 100%;
@@ -23,4 +33,43 @@ main {
 .header,
 .footer {
     flex: 0 0 auto;
+}
+
+h1 {
+font-family: Merriweather;
+color: white;
+font-size: 48px;
+font-weight: 700;
+line-height: 66px;
+letter-spacing: 0em;
+@media (max-width: $mobile) {
+    font-weight: 200;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+}
+h2 {
+font-family: Merriweather;
+font-size: 48px;
+font-weight: 900;
+line-height: 69px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.button {
+    height: 55px;
+    padding: 0 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: $color-button-primary;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 18px;
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
 }

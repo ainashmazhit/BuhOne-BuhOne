@@ -1,8 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  width: calc 100% -60px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+@media (max-width: 576px) {
+  .wrapper {
+    width: calc 100% -30px;
+  }
 }
 
 html,
@@ -24,10 +37,55 @@ main {
   flex: 0 0 auto;
 }
 
+h1 {
+  font-family: Merriweather;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0em;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-weight: 200;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+h2 {
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 69px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.button {
+  height: 55px;
+  padding: 0 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(0, 95, 163);
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .button {
+    font-size: 12px;
+  }
+}
+
 .header {
   background-color: #E5E5E5;
   display: flex;
   justify-content: space-around;
+  padding: 33px;
 }
 
 .header__logo {
@@ -97,11 +155,16 @@ main {
 footer {
   background-color: #E5E5E5;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
+footer__wrapper {
+  display: flex;
+}
 
-.content1 {
+.content1,
+.content2 {
+  display: flex;
+  column-gap: 500px;
   font-family: "Lato";
   src: url("../Fonts/Lato-Bold.ttf");
   font-size: 14px;
@@ -111,22 +174,13 @@ footer {
   color: rgb(0, 0, 0);
 }
 @media (max-width: 576px) {
-  .content1 {
+  .content1,
+  .content2 {
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
     align-items: center;
   }
-}
-
-.content2 {
-  font-family: "Lato";
-  src: url("../Fonts/Lato-Bold.ttf");
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 19px;
-  letter-spacing: 0em;
-  color: rgb(0, 0, 0);
 }
 
 .footer {
@@ -139,6 +193,113 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.first {
+  background-image: url("../img/Rectanglefirst.svg");
+  background-size: cover;
+  width: 100%;
+  height: 670px;
+  padding: 170px 0 243px;
+}
+@media (max-width: 576px) {
+  .first {
+    width: calc 100% -30px;
+    padding: 70px 0 43px;
+  }
+}
+.first .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 80px;
+}
+@media (max-width: 576px) {
+  .first .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.first__description {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+@media (max-width: 576px) {
+  .first__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.reviews {
+  width: 100%;
+  padding: 140px;
+}
+.reviews__wrapper {
+  display: flex;
+}
+
+.content_reviews {
+  font-family: Merriweather;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.reviews_name {
+  font-size: 18px;
+}
+
+.wrapper_reviews_text {
+  background-color: #EBEBEB;
+  display: flex;
+  width: 120%;
+}
+
+.reviews_text {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 95px 58px;
+  gap: 58px;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+
+.surname {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 900;
+  width: 100%;
+}
+
+.profession {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */
