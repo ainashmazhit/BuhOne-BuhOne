@@ -202,6 +202,7 @@ footer__wrapper {
 .first {
   background-image: url("../img/Rectanglefirst.svg");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 670px;
   padding: 170px 0 243px;
@@ -281,7 +282,6 @@ footer__wrapper {
 .wrapper_reviews_text {
   background-color: #EBEBEB;
   display: flex;
-  width: 120%;
 }
 
 .reviews_text {
@@ -316,6 +316,103 @@ footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
+}
+
+.special {
+  background-color: #EBEBEB;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}
+@media (max-width: 576px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.special_name {
+  font-family: Merriweather;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 140px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+.services a {
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+}
+.services img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 576px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+.services__item {
+  aspect-ratio: 1/1;
+  display: block;
+  position: relative;
+}
+.services:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.6509803922);
+  opacity: 0;
+}
+.services:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s;
+  opacity: 0;
+}
+.services:hover:before {
+  opacity: 1;
+}
+.services:hover:after {
+  opacity: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  font-family: Merriweather;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */
