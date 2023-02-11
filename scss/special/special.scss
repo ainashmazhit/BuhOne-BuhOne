@@ -93,8 +93,8 @@
     }
 }
 .text {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    position: absolute;
     font-family: Merriweather;
 font-size: 24px;
 font-weight: 900;
